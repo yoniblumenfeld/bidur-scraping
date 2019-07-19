@@ -10,11 +10,11 @@ class TzavtaScraper(GenericBidurScraper):
     def set_search_url(self, new_search_url):
         super().set_search_url(new_search_url)
 
-    def add_search_keyword(self, keywords):
-        self.search_keywords_list.append(keywords)
+    def add_search_keyword(self, keyword):
+        self.search_keywords_list.append(keyword)
 
-    def reset_search_keywords_and_set(self, keyword):
-        self.search_keywords_list = [keyword]
+    def reset_search_keywords_and_set(self, keywords):
+        self.search_keywords_list = [keywords]
 
     def get_all_links(self):
         pass
