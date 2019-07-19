@@ -1,0 +1,11 @@
+class MPTasks:
+    attrs:
+        + tasks_list
+        + num_of_processors_to_use \ percentage_of_processors_to_use
+        - ready_tasks_dict
+    methods:
+        + run_tasks
+        + run_tasks_async
+        + get_tasks_results
+        + get_ready_tasks_results
+ 

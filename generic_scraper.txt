@@ -1,0 +1,31 @@
+GenericBidurScraper(ABC) #Abstract Class
+    attrs:
+        + search_url
+        + search_keywords_list
+        + ready_responses
+        + name
+    methods:
+        + init_scrape_requests
+        + get_all_links
+        + add_search_keyword
+        + set_search_url
+        + reset_search_keywords_and_set
+
+TzavtaScraper(GenericBidurScraper)
+    attrs:
+        + root_url
+        - keywords
+    methods:
+        + set_keywords
+
+ShowScraper(ABC) #Abstract Class
+    attrs:
+        + url
+    methods:
+        + get_data() #returns title,price,artist
+
+TzavtaShowScraper(ShowScraper):
+    attrs:
+        + url
+    methods:
+        + get_data()

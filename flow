@@ -1,0 +1,12 @@
+first-run:
+    scrape sites with many common search-words and build db accordingly (collections names == search keywords)
+
+background services running:
+    scrape sites by collection names (collection names == searched keywords) all the time
+
+User searches keyword -> is collection name with searched keyword exists in db
+    -> if yes, check if documents were updated in the last (x) time
+        -> if yes, return documents
+        -> if no, update relevant documents, then return all
+    -> if no, create new collection, start immediate scrape with new keyword, create new collection, return documents, add keyword to background scrape
+
