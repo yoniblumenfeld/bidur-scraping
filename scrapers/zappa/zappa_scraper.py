@@ -22,7 +22,7 @@ class ZappaScraper(GenericBidurScraper):
         parser = ZappaResponseParser(response,self.base_url)
         return parser.get_data()
 
-    def parse_response(self, response):
+    """def parse_response(self, response):
         soup = bs(response.text, 'html.parser')
         all_links = soup.findAll('a')
         links = []
@@ -31,7 +31,7 @@ class ZappaScraper(GenericBidurScraper):
             if str(href).find('Show') != -1:
                 links.append(self.base_url+href)
         return links
-
+    """
     def init_scrape_requests(self):
         scrapers = ScrapeRequests(self.search_url, self.search_keywords_list)
         responses = AsyncResponsesParser.get_async_responses(scrapers.get_async_responses())
