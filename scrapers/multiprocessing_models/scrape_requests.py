@@ -33,7 +33,7 @@ class AsyncResponsesParser:
         return response.get().response
     @staticmethod
     def get_async_responses(responses_list):
-        return [AsyncResponsesParser.get_async_response(response) for response in responses_list]
+        return (AsyncResponsesParser.get_async_response(response) for response in responses_list)
 
 if __name__ == '__main__':
     url = r'https://www.zappa-club.co.il/AllShows?free='
