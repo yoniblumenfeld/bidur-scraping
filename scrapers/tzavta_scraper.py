@@ -1,15 +1,12 @@
 from scrapers.generic_scraper import GenericBidurScraper
+from scrapers.multiprocessing_models.scrape_requests import AsyncResponsesParser,ScrapeRequests
 from bs4 import BeautifulSoup as bs
-import grequests
 
 
 class TzavtaScraper(GenericBidurScraper):
     def __init__(self, search_url, search_keywords_list=None):
         super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'Tzavta')
-
-    def set_search_url(self, new_search_url):
-        super().set_search_url(new_search_url)
-
+        self.ready_responses = {}
     def add_search_keyword(self, keyword):
         self.search_keywords_list.append(keyword)
 
@@ -17,7 +14,22 @@ class TzavtaScraper(GenericBidurScraper):
         self.search_keywords_list = [keywords]
 
     def get_all_links(self):
-        pass
+        return self.ready_responses
+
+    def parse_response(self,response):
+        soup = bs(response.text,'html.parser')
+        all_links = soup.findAll('a')
+        links = []
+        for link in all_links:
+            href = link.get('href')
+            if str(href).find('Show') != -1:
+                links.append(href)
+        return links
 
     def init_scrape_requests(self):
-        pass
+        scrapers = ScrapeRequests(self.search_url,self.search_keywords_list)
+        responses = AsyncResponsesParser.get_async_responses(scrapers.get_async_responses())
+        for response in responses:
+            self.ready_responses[response.url] = self.parse_response(response)
+
+

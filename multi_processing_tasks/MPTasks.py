@@ -1,4 +1,5 @@
 import multiprocessing
+from multi_processing_tasks.Task import Task
 
 class MPTasks:
     def __init__(self, tasks_list, percentage_of_processors_to_use):
@@ -9,19 +10,20 @@ class MPTasks:
             self.num_of_processors_to_use = 1
         self.lock = multiprocessing.RLock()
         self.ready_tasks = []
-        self.pool = multiprocessing.Pool(processes=self.num_of_processors_to_use)
         self.processes_list = None
 
     def prepare_tasks_for_processes(self):
         processes_tasks_indexes_range = self.get_tasks_indexes_for_each_process()
         self.processes_list = [
-            self.pool.apply(MPTasks.process_tasks_executor, args=(self.tasks_list[start_idx:end_idx],)) for
+            multiprocessing.Process(target=self.process_tasks_executor, args=(self.tasks_list[start_idx:end_idx],)) for
             start_idx, end_idx in processes_tasks_indexes_range]
-        print(self.processes_list)
+        return self.processes_list
 
     def retrieve_tasks_results(self):
         if not self.processes_list:
             self.prepare_tasks_for_processes()
+        [process.start() for process in self.processes_list]
+        [process.join() for process in self.processes_list]
         return self.processes_list
 
     def get_tasks_indexes_for_each_process(self):
@@ -35,22 +37,25 @@ class MPTasks:
         processes_tasks_indexes_range[-1][1] += tasks_length % num_of_tasks_for_each_process
         return processes_tasks_indexes_range
 
-    @staticmethod
-    def process_tasks_executor(tasks_list):
+
+    def process_tasks_executor(self,tasks_list):
         ready_tasks = []
         for task in tasks_list:
-            ready_tasks.append(task())
+            task_res = task()
+            self.lock.acquire()
+            ready_tasks.append(task_res)
+            self.lock.release()
         return ready_tasks
 
 
+def super_pow(x, y):
+    return x ** y ** 2
 
 if __name__ == "__main__":
     import random
-    from multi_processing_tasks.Task import Task
 
-    def super_pow(x,y):
-        return x**y**2
+
     tasks_list = [Task(super_pow,i,i+1) for i in range(255)]
+    print(tasks_list)
     mptasks = MPTasks(tasks_list,0.5)
-    mptasks.prepare_tasks_for_processes()
     print(mptasks.retrieve_tasks_results())

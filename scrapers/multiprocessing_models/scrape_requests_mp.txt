@@ -1,0 +1,12 @@
+class ScrapeRequests:
+    attrs:
+        + base_search_url
+        + search_keywords_list
+        + processors
+        - responses
+    methods:
+        - get(url)
+        - apply_requests
+        - create_requests_pool
+        + get_async_responses
+

@@ -43,6 +43,7 @@ def create_zappa_requests_pool(urls):
     pool.join()
     return requests_list
 
+
 def main():
     global urls
     zappa_requests_list = create_zappa_requests_pool(urls)

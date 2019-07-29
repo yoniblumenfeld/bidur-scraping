@@ -53,6 +53,14 @@ class GenericBidurScraper(ABC):
         """
         pass
 
+    @abstractmethod
+    def parse_response(self,response):
+        """
+        Abstract method used to parse each response text in order to extract
+        viable data
+        """
+        pass
+
     def set_search_url(self, new_search_url):
         """
         Method used to edit the search url.
