@@ -1,11 +1,19 @@
-from scrapers.tzavta_scraper import TzavtaScraper
+import webbrowser
+
+from scrapers.zappa.zappa_scraper import ZappaScraper
+
+
+def open_new_tab(url):
+    webbrowser.open(url)
 
 def main():
-    tzavta = TzavtaScraper('https://www.zappa-club.co.il/AllShows?free=',
-                           ['הרצליה','תל אביב','ירושלים'])
-    tzavta.init_scrape_requests()
-    tzavta_links = tzavta.get_all_links()
-    print(tzavta_links)
+    zappa = ZappaScraper('https://www.zappa-club.co.il/AllShows?free=',
+                          ['דודו טסה'])
+    zappa.init_scrape_requests()
+    zappa_links = zappa.get_all_links()
+    #for key,val in zappa_links.items():
+    #    [open_new_tab(res) for res in val]
+    print(zappa_links)
 
 if __name__ == '__main__':
     main()

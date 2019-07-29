@@ -12,6 +12,8 @@ class GenericBidurScraper(ABC):
         self.search_url = search_url
         self.name = name
         self.search_keywords_list = search_keywords_list
+        splitted_search = self.search_url.split('/') #TODO://might need to find more generic way, could be buggy
+        self.base_url = '{}//{}'.format(splitted_search[0],splitted_search[2])
         self.ready_responses = None
         super().__init__()
 
