@@ -1,4 +1,4 @@
-from scrapers.tryout import TzavtaScraper
+from scrapers.tzavta_scraper import TzavtaScraper
 
 def main():
     tzavta = TzavtaScraper('https://www.zappa-club.co.il/AllShows?free=',
