@@ -16,8 +16,9 @@ class TzavtaResponseParser(ResponseParser):
 
     def get_title(self, parent):
         #TODO: still wont work :(
-        title = parent.find("div", class_="caption").findChild()[1]
-        return title
+        div = self.soup.find("div", class_="caption")
+        for title in div.findAll('h2'):
+            return title.text
 
     def get_img(self, parent):
         pass
