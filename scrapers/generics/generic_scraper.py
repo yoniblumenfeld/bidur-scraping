@@ -18,7 +18,7 @@ class GenericBidurScraper(ABC):
         super().__init__()
 
     @abstractmethod
-    def get_all_links(self):
+    def get_all_data(self):
         """
         Abstract method used to get all the links that are relevant
         to the search keywords set.

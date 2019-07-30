@@ -1,13 +1,13 @@
-from bs4 import BeautifulSoup as bs
 from scrapers.generics.generic_scraper import GenericBidurScraper
 from scrapers.multiprocessing_models.scrape_requests import AsyncResponsesParser, ScrapeRequests
-from scrapers.zappa.zappa_response_parser import ZappaResponseParser
+from scrapers.tzavta.tzavta_respone_parser import TzavtaResponseParser
 
 
-class ZappaScraper(GenericBidurScraper):
+class TzavtaScraper(GenericBidurScraper):
     def __init__(self, search_url, search_keywords_list=None):
-        super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'tzavta')
+        super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'Tzavta')
         self.ready_responses = {}
+        self.base_url = 'https://www.tzavta.co.il/EventPage.aspx?c=0&'
 
     def add_search_keyword(self, keyword):
         self.search_keywords_list.append(keyword)
@@ -19,7 +19,7 @@ class ZappaScraper(GenericBidurScraper):
         return self.ready_responses
 
     def parse_response(self,response):
-        parser = ZappaResponseParser(response,self.base_url)
+        parser = TzavtaResponseParser(response, self.base_url)
         return parser.get_data()
 
     """def parse_response(self, response):

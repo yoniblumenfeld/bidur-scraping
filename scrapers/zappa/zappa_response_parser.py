@@ -10,7 +10,7 @@ class ZappaResponseParser(ResponseParser):
 
 
     def get_link(self, parent,base_url):
-        pass
+        return base_url + parent.get('href')
 
     def get_title(self, parent):
         title = parent.find("div", class_="content_show_title")
