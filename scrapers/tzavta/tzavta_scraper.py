@@ -7,7 +7,7 @@ class TzavtaScraper(GenericBidurScraper):
     def __init__(self, search_url, search_keywords_list=None):
         super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'Tzavta')
         self.ready_responses = {}
-        self.base_url = 'https://www.tzavta.co.il/EventPage.aspx?c=0&'
+        self.base_url = 'https://www.tzavta.co.il/EventPage.aspx?'
 
     def add_search_keyword(self, keyword):
         self.search_keywords_list.append(keyword)

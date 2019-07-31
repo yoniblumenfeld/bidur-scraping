@@ -6,19 +6,17 @@ class TzavtaResponseParser(ResponseParser):
         super().__init__(response, base_url)
 
     def get_parents(self):
-        all_parents = self.soup.findAll('a')
-        return (parent for parent in all_parents if str(parent.get('href')).find('EventPage') != -1\
-                and str(parent.get("class")) != "['button']")
+        all_parents = self.soup.find('ul', class_="event-list").findAll('li')
+        return (parent for parent in all_parents)
 
     def get_link(self, parent, base_url):
-        link = parent.get('href')
+        link = parent.find('a').get('href')
         return base_url + link[link.find('?')+1:]
 
     def get_title(self, parent):
         #TODO: still wont work :(
-        div = self.soup.find("div", class_="caption")
-        for title in div.findAll('h2'):
-            return title.text
+        title = parent.find('div', class_="caption").find('h2').text
+        return title
 
     def get_img(self, parent):
         pass
@@ -27,4 +25,5 @@ class TzavtaResponseParser(ResponseParser):
         pass
 
     def get_date(self, parent):
-        pass
+        date = parent.find('div', class_="date")
+        return date.text
