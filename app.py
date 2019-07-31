@@ -14,7 +14,7 @@ def get_data(scraper):
 
 
 def main():
-    search_keywords = ['דודו טסה']
+    search_keywords = ['מאור כהן', 'דודו טסה', 'שלמה ארצי']
     zappa = ZappaScraper('https://www.zappa-club.co.il/AllShows?free=', search_keywords)
 
     tzavta = TzavtaScraper('https://www.tzavta.co.il/Index.aspx?c=0&s=', search_keywords)
