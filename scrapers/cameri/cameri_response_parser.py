@@ -21,7 +21,8 @@ class CameriResponseParser(ResponseParser):
         pass
 
     def get_description(self, parent):
-        pass
+        description = parent.find('div', class_="wrap").find('div', class_="summary").text
+        return description.strip().replace(r'n', '')
 
     def get_date(self, parent):
         pass
