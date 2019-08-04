@@ -1,4 +1,5 @@
 from abc import abstractmethod, ABC
+import urllib.parse
 
 
 class GenericBidurScraper(ABC):
@@ -70,3 +71,6 @@ class GenericBidurScraper(ABC):
         Might be used when extra logic is needed before setting the new search url.
         """
         self.search_url = new_search_url
+
+    def decode_js_url(self, string):
+        return urllib.parse.unquote(string)
