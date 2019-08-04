@@ -4,10 +4,10 @@ from scrapers.cameri.cameri_response_parser import CameriResponseParser
 
 
 class CameriScraper(GenericBidurScraper):
-    def __int__(self, search_url, search_keywords_list=None):
+    def __init__(self, search_url, search_keywords_list=None):
         super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'Cameri')
-        self.ready_responses = {}
-        self.base_url = ''
+        self.ready_responses = []
+        self.base_url = 'https://www.cameri.co.il/'
 
     def add_search_keyword(self, keyword):
         self.search_keywords_list.append(keyword)
@@ -37,4 +37,7 @@ class CameriScraper(GenericBidurScraper):
         scrapers = ScrapeRequests(self.search_url, self.search_keywords_list)
         responses = AsyncResponsesParser.get_async_responses(scrapers.get_async_responses())
         for response in responses:
-            self.ready_responses[response.url] = self.parse_response(response)
+            res = self.parse_response(response)
+            for obj in res:
+                obj['keyword'] = self.decode_js_url(response.url.replace(self.search_url,''))
+            self.ready_responses.append(res)

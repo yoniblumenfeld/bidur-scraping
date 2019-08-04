@@ -16,12 +16,12 @@ def get_data(scraper):
 
 
 def main():
-    search_keywords = ['מאור כהן', 'דודו טסה', 'שלמה ארצי']
+    search_keywords = ['מאור כהן', 'דודו טסה', 'שלמה ארצי', 'הריון']
     zappa = ZappaScraper('https://www.zappa-club.co.il/AllShows?free=', search_keywords)
     barby = BarbyScraper('https://www.barby.co.il/', [])
-    # cameri = CameriScraper(' ', 'הריון')
+    cameri = CameriScraper('https://www.cameri.co.il/search.php?f=', search_keywords)
     tzavta = TzavtaScraper('https://www.tzavta.co.il/Index.aspx?c=0&s=', search_keywords)
-    my_scrapers = [barby, zappa, tzavta]
+    my_scrapers = [cameri, barby, zappa, tzavta]
     for scraper in my_scrapers:
         print(get_data(scraper))
 

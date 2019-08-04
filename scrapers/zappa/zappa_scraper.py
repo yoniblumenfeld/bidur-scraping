@@ -6,7 +6,7 @@ from scrapers.zappa.zappa_response_parser import ZappaResponseParser
 
 class ZappaScraper(GenericBidurScraper):
     def __init__(self, search_url, search_keywords_list=None):
-        super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'tzavta')
+        super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'zappa')
         self.ready_responses = []
 
     def add_search_keyword(self, keyword):
