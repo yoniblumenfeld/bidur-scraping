@@ -6,7 +6,7 @@ class ScrapeRequests:
         self.base_search_url = base_search_url
         self.search_keywords_list = search_keywords_list
         self.processors = processors
-        self.reponses = []
+        self.responses = []
 
     def get(self,url):
         return grequests.get(url).send()

@@ -6,8 +6,8 @@ class BarbyResponseParser(ResponseParser):
         super().__init__(response, base_url)
 
     def get_parents(self):
-        parent = self.soup.findAll('table', class_="tbl_cat")
-        return parent
+        all_parents = self.soup.findAll('table', class_="tbl_cat")
+        return (p for p in all_parents)
 
     def get_link(self, parent, base_url):
         link = parent.find('td', class_="defaultRowHeight").find('div', class_="defShowListMain").find('a').get('href')
