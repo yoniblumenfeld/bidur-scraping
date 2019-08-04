@@ -11,6 +11,7 @@ class CameriResponseParser(ResponseParser):
 
     def get_link(self, parent, base_url):
         link = parent.find('div', class_="wrap").find('h3', class_="title").find('a').get('href')
+        print(parent)
         return link
 
     def get_title(self, parent):
