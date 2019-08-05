@@ -3,7 +3,7 @@ from collections import defaultdict
 from bs4 import BeautifulSoup as bs
 import multiprocessing
 import webbrowser,random
-from bidurdb.db import get_db_instance
+from bidurdb.db import __get_db_instance
 
 def compose_zappa_search_url(search_word):
     return ZAPPA_SEARCH_URL + search_word
@@ -50,7 +50,7 @@ def main():
     response_list = [req.get() for req in zappa_requests_list]
     results_dict = create_zappa_results_dict(response_list)
     print(results_dict)
-    db = get_db_instance()
+    db = __get_db_instance()
     db.get_collection('zappa').insert_many([results_dict])
     #open_urls_in_webbrowser(results_dict)
 
