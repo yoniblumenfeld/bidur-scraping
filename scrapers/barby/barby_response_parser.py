@@ -6,21 +6,30 @@ class BarbyResponseParser(ResponseParser):
         super().__init__(response, base_url)
 
     def get_parents(self):
-        parent = self.soup.findAll('table', class_="tbl_cat")
-        return parent
+        all_parents = self.soup.findAll('td', class_="defaultRowHeight")
+        return (parent for parent in all_parents)
 
     def get_link(self, parent, base_url):
-        link = parent.find('td', class_="defaultRowHeight").find('div', class_="defShowListMain").find('a').get('href')
+        link = parent.find('div', class_="defShowListMain").find('a').get('href')
         return base_url + link
 
     def get_title(self, parent):
-        pass
+        title = parent.find('div', class_="defShowListDescHeight").find('div', class_="defShowListDescDiv").text
+        return title.strip().replace(r'\n', '')
 
     def get_img(self, parent):
         pass
 
     def get_description(self, parent):
-        pass
+        description = parent.find('div', class_='descshortc')
+        txt = list(description.text)
+        txt.reverse()
+        txt = txt[txt.index(" ")+4:]
+        txt.reverse()
+        return "".join(txt)
+
+
 
     def get_date(self, parent):
-        pass
+        date = parent.find('div', class_='def_titel2A').text
+        return date

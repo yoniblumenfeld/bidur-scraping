@@ -1,7 +1,0 @@
-each collection - by searched-keyword:
-    each document:
-       title,source_url,source_site,last_update
-
-all_keywords collection:
-    each document:
-        keyword,count

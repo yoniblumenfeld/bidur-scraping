@@ -1,0 +1,11 @@
+no_keywords collection:
+    any object without keyword attribute
+each collection - by searched-keyword:
+    each document:
+       title,link,description,img,keyword,last updated
+
+all_keywords collection:
+    each document:
+        keyword,count
+
+

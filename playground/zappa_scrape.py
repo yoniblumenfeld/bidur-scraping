@@ -3,7 +3,7 @@ from collections import defaultdict
 from bs4 import BeautifulSoup as bs
 import multiprocessing
 import webbrowser,random
-from mongodb.db import get_db_instance
+from bidurdb.db import get_db_instance
 
 def compose_zappa_search_url(search_word):
     return ZAPPA_SEARCH_URL + search_word

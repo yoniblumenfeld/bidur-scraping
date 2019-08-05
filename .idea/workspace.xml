@@ -5,6 +5,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 =======
       <change afterPath="$PROJECT_DIR$/scrapers/tzavta/tzavta_respone_parser.py" afterDir="false" />
@@ -36,6 +37,10 @@
       <change beforePath="$PROJECT_DIR$/scrapers/tzavta/tzavta_respone_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/tzavta/tzavta_respone_parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scrapers/zappa/zappa_response_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/zappa/zappa_response_parser.py" afterDir="false" />
 >>>>>>> origin/DorBranch
+=======
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrapers/cameri/cameri_response_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/scrapers/cameri/cameri_response_parser.py" afterDir="false" />
+>>>>>>> origin/DorBranch
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +56,7 @@
     <SUITE FILE_PATH="coverage/BidurScarping$mongo.coverage" NAME="mongo Coverage Results" MODIFIED="1563092066623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/BidurScarping$MPTasks__1_.coverage" NAME="MPTasks (1) Coverage Results" MODIFIED="1563618366732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/multi_processing_tasks" />
   </component>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   <component name="DockManager">
@@ -123,34 +129,43 @@
 >>>>>>> origin/DorBranch
 =======
 >>>>>>> origin/DorBranch
+=======
+>>>>>>> origin/DorBranch
   <component name="FUSProjectUsageTrigger">
     <session id="-766750476">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="db-structure" value="1" />
+          <entry key="md" value="1" />
           <entry key="multiprocessing_plan" value="1" />
-          <entry key="py" value="24" />
+          <entry key="py" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="24" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="5026" />
+          <entry key="db-structure" value="147" />
+          <entry key="py" value="6690" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="5026" />
+          <entry key="PLAIN_TEXT" value="147" />
+          <entry key="Python" value="6690" />
         </counts>
       </usages-collector>
     </session>
@@ -160,19 +175,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="315">
+              <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
-                <marker date="1564590263587" expanded="true" signature="315:387" ph="..." />
+                <marker date="1564934036607" expanded="true" signature="315:387" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrapers/cameri/cameri_scraper.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             <state relative-caret-position="196">
@@ -185,9 +201,13 @@
             <state relative-caret-position="165">
               <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
 >>>>>>> origin/DorBranch
+=======
+            <state relative-caret-position="255">
+              <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+>>>>>>> origin/DorBranch
               <folding>
                 <element signature="e#0#65#0" expanded="true" />
-                <marker date="1564590198281" expanded="true" signature="278:283" ph="..." />
+                <marker date="1564932291598" expanded="true" signature="278:283" ph="..." />
               </folding>
 >>>>>>> origin/DorBranch
             </state>
@@ -195,8 +215,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapers/cameri/cameri_response_parser.py">
+        <entry file="file://$PROJECT_DIR$/scrapers/generics/generic_scraper.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -214,28 +235,10 @@
             <state relative-caret-position="255">
               <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
 >>>>>>> origin/DorBranch
-              <folding>
-                <marker date="1564589840391" expanded="true" signature="114:119" ph="..." />
-                <marker date="1564589840391" expanded="true" signature="428:552" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapers/generics/generic_scraper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapers/zappa/zappa_scraper.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+=======
+            <state relative-caret-position="-291">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+>>>>>>> origin/DorBranch
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -244,12 +247,82 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrapers/zappa/zappa_response_parser.py">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapers/zappa/zappa_scraper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="120">
+              <caret line="8" column="99" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
               <folding>
-                <marker date="1564587841304" expanded="true" signature="414:465" ph="..." />
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapers/tzavta/tzavta_respone_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
+              <folding>
+                <marker date="1564586030431" expanded="true" signature="620:626" ph="..." />
+                <marker date="1564586030431" expanded="true" signature="652:671" ph="..." />
+                <marker date="1564586030431" expanded="true" signature="705:724" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapers/barby/barby_response_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="47" />
+              <folding>
+                <marker date="1564924837556" expanded="true" signature="113:203" ph="..." />
+                <marker date="1564924837556" expanded="true" signature="235:239" ph="..." />
+                <marker date="1564924837556" expanded="true" signature="543:710" ph="..." />
+                <marker date="1564924837556" expanded="true" signature="789:1005" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapers/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scrapers/cameri/cameri_response_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+              <folding>
+                <marker date="1564934189739" expanded="true" signature="114:119" ph="..." />
+                <marker date="1564934189739" expanded="true" signature="379:388" ph="..." />
+                <marker date="1564934189739" expanded="true" signature="379:476" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrapers/generics/generic_response_parser.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-211">
+              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -305,20 +378,21 @@
         <option value="$PROJECT_DIR$/scrapers/tzavta_scraper.py" />
         <option value="$PROJECT_DIR$/scrapers/generics/generic_parsing.py" />
         <option value="$PROJECT_DIR$/scrapers/tzavta/tzavta_response_parser.py" />
-        <option value="$PROJECT_DIR$/scrapers/zappa/zappa_scraper.py" />
         <option value="$PROJECT_DIR$/scrapers/generics/generic_response_parser.py" />
-        <option value="$PROJECT_DIR$/scrapers/generics/generic_scraper.py" />
-        <option value="$PROJECT_DIR$/scrapers/tzavta/tzavta_scraper.py" />
         <option value="$PROJECT_DIR$/scrapers/tzavta/tzavta_respone_parser.py" />
         <option value="$PROJECT_DIR$/scrapers/tzavta/__init__.py" />
         <option value="$PROJECT_DIR$/scrapers/barby/__init__.py" />
         <option value="$PROJECT_DIR$/scrapers/zappa/zappa_response_parser.py" />
-        <option value="$PROJECT_DIR$/scrapers/barby/barby_scraper.py" />
-        <option value="$PROJECT_DIR$/scrapers/barby/barby_response_parser.py" />
         <option value="$PROJECT_DIR$/scrapers/cameri/__init__.py" />
-        <option value="$PROJECT_DIR$/scrapers/cameri/cameri_response_parser.py" />
+        <option value="$PROJECT_DIR$/scrapers/barby/barby_response_parser.py" />
+        <option value="$PROJECT_DIR$/scrapers/generics/generic_scraper.py" />
+        <option value="$PROJECT_DIR$/scrapers/tzavta/tzavta_scraper.py" />
+        <option value="$PROJECT_DIR$/scrapers/barby/barby_scraper.py" />
+        <option value="$PROJECT_DIR$/bidurdb/db-structure" />
+        <option value="$PROJECT_DIR$/scrapers/zappa/zappa_scraper.py" />
         <option value="$PROJECT_DIR$/scrapers/cameri/cameri_scraper.py" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/scrapers/cameri/cameri_response_parser.py" />
       </list>
     </option>
   </component>
@@ -329,6 +403,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -347,6 +422,10 @@
     <option name="y" value="97" />
     <option name="width" value="891" />
 >>>>>>> origin/DorBranch
+=======
+    <option name="y" value="27" />
+    <option name="width" value="1039" />
+>>>>>>> origin/DorBranch
     <option name="height" value="736" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -358,6 +437,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -370,11 +450,38 @@
               <item name="bidur-scraping" type="462c0819:PsiDirectoryNode" />
               <item name="scrapers" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bidur-scraping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bidur-scraping" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapers" type="462c0819:PsiDirectoryNode" />
+              <item name="barby" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bidur-scraping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bidur-scraping" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapers" type="462c0819:PsiDirectoryNode" />
+              <item name="cameri" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bidur-scraping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bidur-scraping" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapers" type="462c0819:PsiDirectoryNode" />
+              <item name="tzavta" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bidur-scraping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bidur-scraping" type="462c0819:PsiDirectoryNode" />
+              <item name="scrapers" type="462c0819:PsiDirectoryNode" />
+              <item name="zappa" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bidur-scraping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -708,6 +815,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
@@ -738,23 +846,26 @@
 =======
     <frame x="85" y="97" width="891" height="736" extended-state="0" />
 >>>>>>> origin/DorBranch
+=======
+    <frame x="0" y="27" width="1039" height="736" extended-state="0" />
+>>>>>>> origin/DorBranch
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2735632" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23280942" />
       <window_info id="Structure" order="1" weight="0.24921466" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32919255" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32298136" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30745342" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39906833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32919255" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32919255" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3167702" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32919255" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -802,20 +913,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mongodb/__init___.py">
+    <entry file="file://$PROJECT_DIR$/bidurdb/__init___.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/UMLish/flow">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongodb/db-structure">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -832,20 +936,6 @@
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/multiprocessing/context.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/multiprocessing/__init__.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/multiprocessing/process.py" />
-    <entry file="file://$PROJECT_DIR$/multi_processing_tasks/Task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/multi_processing_tasks/MPTasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/multiprocessing_models/scrape_requests_mp.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -857,30 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/multiprocessing_models/scrape_requests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongodb/create_db_and_collection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongodb/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -901,88 +967,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/generics/generic_scraper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/barby/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/tzavta/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/zappa/zappa_response_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <marker date="1564587841304" expanded="true" signature="414:465" ph="..." />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/scrapers/zappa/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/zappa/zappa_scraper.py">
+    <entry file="file://$PROJECT_DIR$/multi_processing_tasks/Task.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multi_processing_tasks/MPTasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/multiprocessing_models/scrape_requests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/generics/generic_response_parser.py">
+    <entry file="file://$PROJECT_DIR$/bidurdb/db-structure">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+        <state relative-caret-position="15">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bidurdb/db.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/barby/barby_scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#65#0" expanded="true" />
+            <marker date="1564929840550" expanded="true" signature="274:279" ph="..." />
+            <marker date="1564929840550" expanded="true" signature="673:682" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bidurdb/create_db_and_collection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/cameri/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/barby/barby_response_parser.py">
+    <entry file="file://$PROJECT_DIR$/scrapers/zappa/zappa_response_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
-            <marker date="1564588491766" expanded="true" signature="113:203" ph="..." />
-            <marker date="1564588491766" expanded="true" signature="235:239" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/tzavta/tzavta_respone_parser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <marker date="1564586030431" expanded="true" signature="620:626" ph="..." />
-            <marker date="1564586030431" expanded="true" signature="652:671" ph="..." />
-            <marker date="1564586030431" expanded="true" signature="705:724" ph="..." />
+            <marker date="1564587841304" expanded="true" signature="414:465" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrapers/tzavta/tzavta_scraper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="e#0#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/zappa/zappa_scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="99" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/generics/generic_scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/generics/generic_response_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrapers/cameri/cameri_scraper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#65#0" expanded="true" />
+            <marker date="1564932291598" expanded="true" signature="278:283" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -1004,28 +1130,35 @@
 >>>>>>> origin/DorBranch
 =======
     <entry file="file://$PROJECT_DIR$/scrapers/barby/barby_scraper.py">
+=======
+    <entry file="file://$PROJECT_DIR$/scrapers/tzavta/tzavta_respone_parser.py">
+>>>>>>> origin/DorBranch
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="60">
+          <caret line="4" column="43" lean-forward="true" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
           <folding>
-            <element signature="e#0#65#0" expanded="true" />
-            <marker date="1564588166781" expanded="true" signature="274:279" ph="..." />
-            <marker date="1564588166781" expanded="true" signature="673:682" ph="..." />
+            <marker date="1564586030431" expanded="true" signature="620:626" ph="..." />
+            <marker date="1564586030431" expanded="true" signature="652:671" ph="..." />
+            <marker date="1564586030431" expanded="true" signature="705:724" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/zappa/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/cameri/cameri_response_parser.py">
+    <entry file="file://$PROJECT_DIR$/scrapers/barby/barby_response_parser.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="255">
           <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
 >>>>>>> origin/DorBranch
+=======
+        <state relative-caret-position="225">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="47" />
+>>>>>>> origin/DorBranch
           <folding>
-            <marker date="1564589840391" expanded="true" signature="114:119" ph="..." />
-            <marker date="1564589840391" expanded="true" signature="428:552" ph="..." />
+            <marker date="1564924837556" expanded="true" signature="113:203" ph="..." />
+            <marker date="1564924837556" expanded="true" signature="235:239" ph="..." />
+            <marker date="1564924837556" expanded="true" signature="543:710" ph="..." />
+            <marker date="1564924837556" expanded="true" signature="789:1005" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1046,6 +1179,7 @@
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="206">
           <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
 >>>>>>> origin/DorBranch
@@ -1053,20 +1187,25 @@
         <state relative-caret-position="300">
           <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
 >>>>>>> origin/DorBranch
+=======
+        <state relative-caret-position="315">
+          <caret line="21" column="72" selection-start-line="21" selection-start-column="72" selection-end-line="21" selection-end-column="72" />
+>>>>>>> origin/DorBranch
           <folding>
             <element signature="e#0#17#0" expanded="true" />
-            <marker date="1564590263587" expanded="true" signature="315:387" ph="..." />
+            <marker date="1564934036607" expanded="true" signature="315:387" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrapers/cameri/cameri_scraper.py">
+    <entry file="file://$PROJECT_DIR$/scrapers/cameri/cameri_response_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        <state relative-caret-position="256">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
           <folding>
-            <element signature="e#0#65#0" expanded="true" />
-            <marker date="1564590198281" expanded="true" signature="278:283" ph="..." />
+            <marker date="1564934189739" expanded="true" signature="114:119" ph="..." />
+            <marker date="1564934189739" expanded="true" signature="379:388" ph="..." />
+            <marker date="1564934189739" expanded="true" signature="379:476" ph="..." />
           </folding>
         </state>
       </provider>
