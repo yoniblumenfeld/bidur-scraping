@@ -15,7 +15,7 @@ def open_new_tab(url):
     webbrowser.open(url)
 
 
-def get_data(scraper):
+def scrape(scraper):
     scraper.init_scrape_requests()
     data = scraper.get_all_data()
     producer = db_producer.DbProducer(exchange_type=rabbitmq.settings.DB_INSERTIONS_EXCHANGE_TYPE,
@@ -47,7 +47,7 @@ def main():
     threads = []
 
     for scraper in my_scrapers:
-        threads.append(threading.Thread(target=get_data, args=(scraper,)))
+        threads.append(threading.Thread(target=scrape, args=(scraper,)))
     for thread in threads: thread.start()
     for thread in threads: thread.join()
     worker_thread.join()
