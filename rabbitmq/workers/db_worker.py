@@ -1,12 +1,5 @@
 import pika
-from bidurdb import db
-import json
-
-def db_insert_callback(ch, method, properties, body):
-    print('recieved data to insert')
-    data = json.loads(body)
-    db.insert_scrape_results(data)
-    ch.basic_ack(delivery_tag=method.delievery_tag)
+from rabbitmq import callbacks
 
 class DbWorker:
     def __init__(self, host='localhost', queue_name='', exchange_name='', exchange_type = 'direct',callback=None, routing_keys=[]):
@@ -40,12 +33,11 @@ class DbWorker:
                                    on_message_callback=self.callback)
         self.channel.start_consuming()
 
-
 if __name__ == "__main__":
-    import sys, json
-    proc_data = json.loads(sys.argv[1])
-    exc_name = proc_data['exchange_name']
-    exc_type = proc_data['exchange_type']
-    routing_keys = proc_data['routing_keys']
-    worker = DbWorker(exchange_name=exc_name,exchange_type=exc_type,routing_keys=routing_keys)
+    from rabbitmq import settings
+    import sys
+    worker = DbWorker(exchange_type=settings.DB_INSERTIONS_EXCHANGE_TYPE,
+                      exchange_name=settings.DB_INSERTIONS_EXCHANGE_NAME,
+                      routing_keys=sys.argv[1:],
+                      callback=callbacks.db_insert_callback)
     worker.consume()

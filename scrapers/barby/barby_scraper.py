@@ -5,7 +5,7 @@ from scrapers.barby.barby_response_parser import BarbyResponseParser
 
 class BarbyScraper(GenericBidurScraper):
     def __init__(self, search_url, search_keywords_list=None):
-        super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'Barby')
+        super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'barby')
         self.ready_responses = []
         self.base_url = 'https://www.barby.co.il'
 

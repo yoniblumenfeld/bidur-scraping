@@ -5,7 +5,7 @@ from scrapers.cameri.cameri_response_parser import CameriResponseParser
 
 class CameriScraper(GenericBidurScraper):
     def __init__(self, search_url, search_keywords_list=None):
-        super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'Cameri')
+        super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'cameri')
         self.ready_responses = []
         self.base_url = 'https://www.cameri.co.il/'
 

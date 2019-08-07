@@ -5,7 +5,7 @@ from scrapers.tzavta.tzavta_respone_parser import TzavtaResponseParser
 
 class TzavtaScraper(GenericBidurScraper):
     def __init__(self, search_url, search_keywords_list=None):
-        super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'Tzavta')
+        super().__init__(search_url, search_keywords_list if search_keywords_list else [''], 'tzavta')
         self.ready_responses = []
         self.base_url = 'https://www.tzavta.co.il/EventPage.aspx?'
 
