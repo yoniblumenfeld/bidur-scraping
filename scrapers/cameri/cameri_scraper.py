@@ -13,7 +13,7 @@ class CameriScraper(GenericBidurScraper):
         self.search_keywords_list.append(keyword)
 
     def reset_search_keywords_and_set(self, keywords):
-        self.search_keywords_list = [keywords]
+        self.search_keywords_list = keywords
 
     def get_all_data(self):
         return self.ready_responses

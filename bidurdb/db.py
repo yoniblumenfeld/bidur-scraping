@@ -14,7 +14,7 @@ def is_collection_exists(collection_name):
 def __insert_results_to_collection(results_by_keywords):
     db = __get_db_instance()
     for keyword,results in results_by_keywords.items():
-        collection_name = keyword if keyword.strip() != '' else bidurdb_settings.NO_KEYWORDS_COLLECTION_NAME
+        collection_name = keyword if len(keyword.strip()) != 0 else bidurdb_settings.NO_KEYWORDS_COLLECTION_NAME
         if not is_collection_exists(collection_name):
             collection = db.create_collection(collection_name)
         else: collection = db.get_collection(collection_name)
